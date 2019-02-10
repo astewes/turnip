@@ -1,0 +1,58 @@
+.App {
+  // background-image: (url(./assets/images/header.jpg));
+  margin-top: 40px;
+  * {
+    box-sizing: border-box;
+  }
+  header {
+    div {
+      max-width: 560px;
+      margin: auto;
+    }
+    img {
+      display: block;
+      max-width: 560px;
+      margin: 10px auto;
+    }
+  }
+  main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  a {
+    outline: none;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active ,
+    &.active {
+      outline: none;
+    }
+  }
+  li {
+    list-style-type: none;
+  }
+  nav {
+    border: 2px solid black;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+    li {
+      display: inline-block;
+      
+      &:first-child {
+        padding-right: 10px;
+      }
+      a {
+        border-bottom: 2px solid transparent;
+        color: black;
+        transition: border-bottom .1s ease-in;
+        &:hover, &focus {
+          border-bottom: 1px solid maroon;
+        }
+      }
+    }
+  }
+}
